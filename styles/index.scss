@@ -39,3 +39,41 @@
 @import "search_results";
 @import "notifications";
 @import "dropdowns";
+
+body { 
+  background: #f3f5f7;
+}
+
+.paper {
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  position: relative;
+  z-index: 3;
+  text-decoration: none;
+  overflow: hidden;
+  width: 100%;
+  display: block;
+  outline: none;
+  -webkit-box-shadow: 0 3px 8px 0 rgba(0,0,0,0.03);
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.03);
+  -webkit-transition: border .15s linear, background-color .15s linear, opacity .15s linear, -webkit-transform .15s linear, -webkit-box-shadow .15s linear;
+  transition: border .15s linear, background-color .15s linear, opacity .15s linear, -webkit-transform .15s linear, -webkit-box-shadow .15s linear;
+  -o-transition: border .15s linear, transform .15s linear, background-color .15s linear, box-shadow .15s linear, opacity .15s linear;
+  transition: border .15s linear, transform .15s linear, background-color .15s linear, box-shadow .15s linear, opacity .15s linear;
+  transition: border .15s linear, transform .15s linear, background-color .15s linear, box-shadow .15s linear, opacity .15s linear, -webkit-transform .15s linear, -webkit-box-shadow .15s linear;
+
+  &:hover {
+    border: 1px solid rgba(136,149,162,0.2);
+    background-color: #fcfcfc;
+  }
+}
+
+#main-content {
+  margin-bottom: 1rem;
+}
+
+#section-articles-title {
+  display: block;
+  margin-bottom: 0.5rem;
+}

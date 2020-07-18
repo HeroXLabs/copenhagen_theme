@@ -1009,18 +1009,18 @@ ul {
 /***** Hero component *****/
 .hero {
   background-color: $brand_color;
-  height: 300px;
-  padding: 0 20px;
+  padding: 3rem 4rem;
   text-align: center;
   width: 100%;
 }
 
 .hero-inner {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  max-width: 610px;
   margin: 0 auto;
+}
+
+.hero-sm {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
 }
 
 .page-header {
@@ -1080,8 +1080,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 30px;
-  min-height: 50px;
+  margin-bottom: 0;
   padding-bottom: 15px;
 }
 
@@ -1118,31 +1117,10 @@ ul {
   }
 }
 
-.blocks-item {
-  border: 1px solid $brand_color;
-  border-radius: 4px;
-  box-sizing: border-box;
-  color: $brand_color;
-  display: flex;
-  flex: 1 0 340px;
-  margin: 0 0 30px;
-  max-width: 100%;
-  text-align: center;
-}
-
 @media (min-width: 768px) {
   .blocks-item {
     margin: 0 15px 30px;
   }
-}
-
-.blocks-item:hover, .blocks-item:focus, .blocks-item:active {
-  background-color: $brand_color;
-}
-
-.blocks-item:hover *, .blocks-item:focus *, .blocks-item:active * {
-  color: $brand_text_color;
-  text-decoration: none;
 }
 
 .blocks-item-internal {
@@ -1163,7 +1141,7 @@ ul {
 
 .blocks-item-link {
   color: $brand_color;
-  padding: 20px 30px;
+  padding: 30px 30px;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -1196,6 +1174,17 @@ ul {
 }
 
 /***** Homepage *****/
+.content {
+  max-width: 100%;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content.hero-inner {
+  position: relative;
+}
+
 .section {
   margin-bottom: 40px;
 }
@@ -1466,6 +1455,9 @@ ul {
 .section-container {
   display: flex;
   justify-content: flex-end;
+  padding: 1.75rem;
+  background: white;
+  border-radius: 0.25rem;
 }
 
 .section-content {
@@ -1526,8 +1518,8 @@ ul {
 
 @media (min-width: 1024px) {
   .article {
-    flex: 1 0 66%;
-    max-width: 66%;
+    flex: 1 0 75%;
+    max-width: 75%;
     min-width: 640px;
     padding: 0 30px;
   }
@@ -1536,6 +1528,9 @@ ul {
 .article-container {
   display: flex;
   flex-direction: column;
+  padding: 1.75rem;
+  background: white;
+  border-radius: 0.25rem;
 }
 
 @media (min-width: 1024px) {
@@ -1701,7 +1696,7 @@ ul {
 @media (min-width: 1024px) {
   .article-sidebar {
     border: 0;
-    flex: 0 0 17%;
+    flex: 0 0 25%;
     height: auto;
   }
 }
@@ -4116,6 +4111,9 @@ ul {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 1.75rem;
+  background: white;
+  border-radius: 0.25rem;
 }
 
 @media (min-width: 1024px) {
@@ -4625,4 +4623,42 @@ html[dir="rtl"] .notification-left-aligned {
 
 .dropdown-chevron-icon {
   vertical-align: middle;
+}
+
+body {
+  background: #f3f5f7;
+}
+
+.paper {
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  position: relative;
+  z-index: 3;
+  text-decoration: none;
+  overflow: hidden;
+  width: 100%;
+  display: block;
+  outline: none;
+  -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.03);
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.03);
+  -webkit-transition: border .15s linear, background-color .15s linear, opacity .15s linear, -webkit-transform .15s linear, -webkit-box-shadow .15s linear;
+  transition: border .15s linear, background-color .15s linear, opacity .15s linear, -webkit-transform .15s linear, -webkit-box-shadow .15s linear;
+  -o-transition: border .15s linear, transform .15s linear, background-color .15s linear, box-shadow .15s linear, opacity .15s linear;
+  transition: border .15s linear, transform .15s linear, background-color .15s linear, box-shadow .15s linear, opacity .15s linear;
+  transition: border .15s linear, transform .15s linear, background-color .15s linear, box-shadow .15s linear, opacity .15s linear, -webkit-transform .15s linear, -webkit-box-shadow .15s linear;
+}
+
+.paper:hover {
+  border: 1px solid rgba(136, 149, 162, 0.2);
+  background-color: #fcfcfc;
+}
+
+#main-content {
+  margin-bottom: 1rem;
+}
+
+#section-articles-title {
+  display: block;
+  margin-bottom: 0.5rem;
 }

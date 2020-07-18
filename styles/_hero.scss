@@ -1,14 +1,15 @@
 /***** Hero component *****/
 .hero {
   background-color: $brand_color;
-  height: 300px;
-  padding: 0 20px;
+  padding: 3rem 4rem;
   text-align: center;
   width: 100%;
 
   &-inner {
-    @include vertical-align;
-    max-width: 610px;
     margin: 0 auto;
+  }
+  &-sm {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
   }
 }
