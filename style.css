@@ -1161,12 +1161,13 @@ ul {
 
 .blocks-item-title {
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .blocks-item-description {
   font-weight: 300;
   margin: 0;
+  color: #777;
 }
 
 .blocks-item-description:not(:empty) {
