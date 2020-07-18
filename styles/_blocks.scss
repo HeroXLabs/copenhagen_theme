@@ -55,12 +55,14 @@
 
   &-item-title {
     margin-bottom: 0;
-    font-size: 16px;
+    font-size: 18px;
+    color: #111111;
   }
 
   &-item-description {
     font-weight: $font-weight-light;
     margin: 0;
+    color: #333333;
   }
 
   &-item-description:not(:empty) {
