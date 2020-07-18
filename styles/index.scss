@@ -77,3 +77,30 @@ body {
   display: block;
   margin-bottom: 0.5rem;
 }
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.categories .blocks-list {
+  .blocks-item {
+    &[data-url="/hc/en-us/sections/360009270553-What-is-health-score-"] .blocks-item-icon:before {
+      content: "❤";
+    }
+    &[data-url="/hc/en-us/sections/360009270533-Announcements"] .blocks-item-icon:before {
+      content: "😃";
+    }
+  }
+}

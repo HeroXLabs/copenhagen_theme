@@ -18,7 +18,7 @@
       <ul class="blocks-list">
         {{#each categories}}
           {{#if ../has_multiple_categories}}
-            <li class="blocks-item">
+            <li class="blocks-item paper">
               <a href='{{url}}' class="blocks-item-link">
                 <span class="blocks-item-title">{{name}}</span>
                 <span class="blocks-item-description">{{excerpt description}}</span>
@@ -26,12 +26,16 @@
             </li>
           {{else}}
             {{#each sections}}
-              <li class="blocks-item paper">
-                <a href='{{url}}' class="blocks-item-link">
-                  <span class="blocks-item-title">
-                    {{name}}
-                  </span>
-                  <span class="blocks-item-description">{{excerpt description}}</span>
+              <li class="blocks-item paper" data-url='{{url}}'>
+                <a href='{{url}}' class="blocks-item-link d-flex justify-content-between flex-row">
+                  <div class="blocks-item-icon">
+                  </div>
+                  <div class="flex-grow-1">
+                    <div class="blocks-item-title">
+                      {{name}}
+                    </div>
+                    <div class="blocks-item-description">{{excerpt description}}</div>
+                  </div>
                 </a>
               </li>
             {{/each}}

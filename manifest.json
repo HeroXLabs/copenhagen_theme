@@ -1,7 +1,7 @@
 {
   "name": "Copenhagen",
   "author": "Zendesk",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "api_version": 2,
   "default_locale": "en-us",
   "settings": [
@@ -34,7 +34,7 @@
           "type": "color",
           "description": "link_color_description",
           "label": "link_color_label",
-          "value": "#E5C244"
+          "value": "#dcac00"
         },
         {
           "identifier": "background_color",
@@ -59,6 +59,10 @@
               "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
             },
             {
+              "label": "Serif",
+              "value": "'DM Serif Display',serif"
+            },
+            {
               "label": "Arial",
               "value": "Arial, 'Helvetica Neue', Helvetica, sans-serif"
             },
@@ -119,7 +123,7 @@
               "value": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
             }
           ],
-          "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+          "value": "'DM Serif Display',serif"
         },
         {
           "identifier": "text_font",
@@ -132,6 +136,10 @@
               "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
             },
             {
+              "label": "DM Sans",
+              "value": "'DM Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'"
+            },
+            {
               "label": "Arial",
               "value": "Arial, 'Helvetica Neue', Helvetica, sans-serif"
             },
@@ -192,7 +200,7 @@
               "value": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
             }
           ],
-          "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+          "value": "'DM Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'"
         }
       ]
     },

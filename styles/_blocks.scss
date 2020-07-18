@@ -34,7 +34,7 @@
   }
 
   &-item-link {
-    color: $brand_color;
+    color: $link_color;
     padding: 30px 30px;
     display: flex;
     flex-direction: column;
@@ -55,16 +55,24 @@
 
   &-item-title {
     margin-bottom: 0;
-    font-size: 18px;
+    font-size: $font-size-bigger;
+    font-family: $heading_font;
   }
 
   &-item-description {
     font-weight: 400;
+    font-size: $font-size-base;
     margin: 0;
-    color: #777;
+    color: $field-text-color;
   }
 
   &-item-description:not(:empty) {
     margin-top: 10px;
+  }
+
+  &-item-icon {
+    margin-right: 1.5rem;
+    text-align: left;
+    font-size: 2rem;
   }
 }

@@ -191,6 +191,14 @@
       @extend .button-primary;
     }
   }
+
+  &-list-item {
+    padding: 2rem;
+    border-bottom: 1px solid $border-color;
+    a {
+      text-decoration: none;
+    }
+  }
 }
 
 .sidenav {

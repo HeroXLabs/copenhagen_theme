@@ -1,3 +1,6 @@
+# [2.3.3](https://github.com/zendesk/copenhagen_theme/compare/v2.3.2...v2.3.3) (2020-07-18)
+Add custom fonts
+
 # [2.3.2](https://github.com/zendesk/copenhagen_theme/compare/v2.3.0...v2.3.2) (2020-07-17)
 
 # [2.3.0](https://github.com/zendesk/copenhagen_theme/compare/v2.2.4...v2.3.0) (2020-06-24)
